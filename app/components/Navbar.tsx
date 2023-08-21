@@ -52,8 +52,8 @@ const navlinks = [
           <nav className="block text-sm items-center">
             {navlinks.map((link) => (
               <Link key={link.id} href={link.href}>
-                <div className="group relative items-center text-center hover:bg-sky-500 transition-shadow">
-                  <li className="block text-white hover:text-gray-600 p-2">
+                <div className="group relative items-center text-center hover:bg-gray-300 rounded-md transition-shadow">
+                  <li className="block text-white hover:text-slate-800 p-2">
                     {link.text}
                   </li>
                 </div>
