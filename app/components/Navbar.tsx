@@ -48,12 +48,12 @@ const navlinks = [
             : "md:hidden absolute z-10 left-[-100%] top-16 right-0 h-80 bottom-0 w-full bg-gray-200 flex justify-center items-center duration-300"
         }
       >
-        <ul className="bg-sky-950 text-white p-10 absolute top-0 right-0 w-full">
+        <ul className="bg-sky-950 border-t border-t-slate-300 text-white py-10 absolute top-0 right-0 w-full">
           <nav className="block text-sm items-center">
             {navlinks.map((link) => (
               <Link key={link.id} href={link.href}>
                 <div className="group relative items-center text-center hover:bg-gray-300 rounded-md transition-shadow">
-                  <li className="block text-white hover:text-slate-800 p-2">
+                  <li className="block text-white hover:text-slate-800 hover:uppercase p-2">
                     {link.text}
                   </li>
                 </div>
