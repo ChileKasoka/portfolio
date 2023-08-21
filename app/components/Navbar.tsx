@@ -40,6 +40,28 @@ const navlinks = [
         >
           {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
         </div>
+
+        <div
+        className={
+          nav
+            ? "md:hidden absolute z-10 left-0 right-0 top-16 h-80 bottom-0 w-full bg-gray-200 items-center duration-300"
+            : "md:hidden absolute z-10 left-[-100%] top-16 right-0 h-80 bottom-0 w-full bg-gray-200 flex justify-center items-center duration-300"
+        }
+      >
+        <ul className="bg-sky-950 text-white p-10 absolute top-0 right-0 w-full">
+          <nav className="block text-sm items-center">
+            {navlinks.map((link) => (
+              <Link key={link.id} href={link.href}>
+                <div className="group relative items-center text-center hover:bg-sky-500 transition-shadow">
+                  <li className="block text-white hover:text-gray-600 p-2">
+                    {link.text}
+                  </li>
+                </div>
+              </Link>
+            ))}
+          </nav>
+        </ul>
+      </div>
     </div>
 
   )
