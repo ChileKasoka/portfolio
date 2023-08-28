@@ -18,8 +18,8 @@ function Header() {
 ]
 
   return (
-    <div className='h-auto w-full flex flex-wrap justify-center md:justify-between items-center bg-sky-950'>
-      <div className='justify-center items-center ml-5 text-white text-xl'>
+    <div className='h-auto w-full grid grid-cols-1 flex-wrap justify-center md:justify-between items-center bg-sky-950'>
+      <div className='justify-center h-16 items-center ml-5 text-white text-xl'>
         HELLO WORLD
       </div>
       <div className='w-4/5 flex-wrap'>
@@ -38,9 +38,8 @@ function Header() {
             </div>
         </ul>
       </div>
-
     </div>
-    <div className={`md:flex md:items-center ${nav ? 'block' : 'hidden'}`}>
+          <div className={`md:flex md:items-center ${nav ? 'block' : 'hidden'}`}>
         <ul className=" bg-sky-950 border-t md:hidden border-t-slate-300 text-white py-10 flex-wrap top-0 right-0 w-full">
           <nav className="block text-sm items-center">
             {navlinks.map((link) => (
@@ -58,7 +57,7 @@ function Header() {
     {/* mobile button */}
       <div
             onClick={handleNav}
-            className="text-white right-0 top-0 mr-5 mt-5 md:hidden z-10"
+            className="absolute text-white right-0 top-0 mr-5 mt-5 md:hidden z-10"
           >
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
