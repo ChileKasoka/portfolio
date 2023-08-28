@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <div className='h-auto w-full grid grid-cols-1 flex-wrap justify-center md:justify-between items-center bg-sky-950'>
-      <div className='justify-center h-16 items-center ml-5 text-white text-xl'>
+      <div className='justify-center h-16 items-center ml-5 mt-6 text-white text-xl'>
         HELLO WORLD
       </div>
       <div className='w-4/5 flex-wrap'>
